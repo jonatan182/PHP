@@ -1,0 +1,39 @@
+-- phpMyAdmin SQL Dump
+-- version 3.1.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 22-09-2014 a las 20:04:18
+-- Versión del servidor: 5.1.30
+-- Versión de PHP: 5.2.8
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `plantillaFUSM`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(30) NOT NULL,
+  `apellido` varchar(30) NOT NULL,
+  `user` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `estado` int(11) NOT NULL,
+  `tipo` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcar la base de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `apellido`, `user`, `password`, `estado`, `tipo`) VALUES
+(1, 'pedro', 'perez', 'pperez', '123456', 1, 1),
+(2, 'sandra', 'cardenas', 'scardenas', '123456', 1, 2);
